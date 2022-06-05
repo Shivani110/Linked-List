@@ -1,0 +1,30 @@
+<html>
+<body>
+<script>
+    var h;
+	class Link 
+	{
+		constructor(n) 
+		{
+			this.x = n;
+			this.nxt = null;
+		}
+	}
+	function listprint()
+	{
+		var a = h;
+		while (a != null) 
+		{
+			document.write(a.x + " ");
+			a = a.nxt;
+		}
+	}
+	var h = new Link(100);
+	var two = new Link(200);
+	var three = new Link(300);
+    h.nxt = two; 
+	two.nxt = three;
+    listprint();
+</script>
+</body>
+</html>
